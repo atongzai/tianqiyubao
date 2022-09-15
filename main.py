@@ -82,7 +82,7 @@ def get_weather_1():
 
 # 天行数据接口
 def get_weather_2():
-    url = "http://api.tianapi.com/tianqi/index?key=d5edced4967c76fd11899dbe1b753d91&city=" + city
+    url = "http://api.tianapi.com/tianqi/index?key=c826f46b22a2961712e88d5775925281&city=" + city
     res2 = requests.get(url, verify=False)
     if res2.status_code != 200:
         return res2
@@ -104,7 +104,7 @@ def get_weather_3():
 
 # 星座
 def get_xingzuo():
-    url = "http://api.tianapi.com/star/index?key=d5edced4967c76fd11899dbe1b753d91&astro=" + sign(cmonth, cdate)
+    url = "http://api.tianapi.com/star/index?key=c826f46b22a2961712e88d5775925281&astro=" + sign(cmonth, cdate)
     xingzuo = requests.get(url, verify=False)
     if xingzuo.status_code != 200:
         return get_xingzuo()
