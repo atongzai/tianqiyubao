@@ -326,7 +326,8 @@ data = {
         "color": get_random_color()
     },
     "3": {
-        "value": get_weather_icon(weather) + weather,
+#         "value": get_weather_icon(weather) + weather,
+         "value":  weather,   
         "color": get_random_color()
     },
     "4": {
