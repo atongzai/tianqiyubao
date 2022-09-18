@@ -266,6 +266,13 @@ def get_words():
         return get_words()
     return words.json()['data']['text']
 
+#朋友圈文案api接口
+def get_words1():
+  words1 = requests.get("https://api.shadiao.pro/pyq")
+  if words1.status_code != 200:
+    return get_words1()
+  return words1.json()['data']['text']
+
 
 def format_temperature(temperature):
     return math.floor(temperature)
@@ -408,6 +415,10 @@ data = {
     },
     "q": {
         "value": get_words(),
+        "color": get_random_color()
+    },
+     "q1": {
+         "value": get_words1(),
         "color": get_random_color()
     },
     "r": {
