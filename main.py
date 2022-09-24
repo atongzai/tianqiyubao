@@ -338,10 +338,10 @@ data = {
         "value": tem + "℃",
         "color": get_random_color()
     },
-    "6": {
-        "value": Day_1 + "~" + Day_2 + "~" + Day_3 + "~" + Day_4 + "~" + Day_5,
-        "color": get_random_color()
-    },
+#     "6": {
+#         "value": Day_1 + "~" + Day_2 + "~" + Day_3 + "~" + Day_4 + "~" + Day_5,
+#         "color": get_random_color()
+#     },
     "7": {
         "value": tem1 + "℃" + "~" + tem2 + "℃",
         "color": get_random_color()
@@ -394,10 +394,10 @@ data = {
         "value": str(danger1) + "/" + str(danger2),
         "color": get_random_color()
     },
-    "k": {
-        "value": dressing,
-        "color": get_random_color()
-    },
+#     "k": {
+#         "value": dressing,
+#         "color": get_random_color()
+#     },
     "l": {
         "value": get_memorial_days_count(),
         "color": get_random_color()
@@ -406,14 +406,14 @@ data = {
         "value": alarm2,
         "color": "#FF0000",
     },
-    "o": {
-        "value": Skincare,
-        "color": get_random_color()
-    },
-    "p": {
-        "value": cold,
-        "color": get_random_color()
-    },
+#     "o": {
+#         "value": Skincare,
+#         "color": get_random_color()
+#     },
+#     "p": {
+#         "value": cold,
+#         "color": get_random_color()
+#     },
     "q": {
         "value": get_words(),
         "color": get_random_color()
@@ -422,38 +422,38 @@ data = {
          "value": get_words1(),
         "color": get_random_color()
     },
-    "r": {
-        "value": Ultraviolet,
-        "color": get_random_color()
-    },
-    "s": {
-        "value": xiche,
-        "color": get_random_color()
-    },
-    "t": {
-        "value": liangshai,
-        "color": get_random_color()
-    },
-    "u": {
-        "value": huwai,
-        "color": get_random_color()
-    },
-    "v": {
-        "value": wuran,
-        "color": get_random_color()
-    },
-    "w": {
-        "value": zhongshu,
-        "color": get_random_color()
-    },
-    "x": {
-        "value": shushi,
-        "color": get_random_color()
-    },
-    "y": {
-        "value": shangyue,
-        "color": get_random_color()
-    },
+#     "r": {
+#         "value": Ultraviolet,
+#         "color": get_random_color()
+#     },
+#     "s": {
+#         "value": xiche,
+#         "color": get_random_color()
+#     },
+#     "t": {
+#         "value": liangshai,
+#         "color": get_random_color()
+#     },
+#     "u": {
+#         "value": huwai,
+#         "color": get_random_color()
+#     },
+#     "v": {
+#         "value": wuran,
+#         "color": get_random_color()
+#     },
+#     "w": {
+#         "value": zhongshu,
+#         "color": get_random_color()
+#     },
+#     "x": {
+#         "value": shushi,
+#         "color": get_random_color()
+#     },
+#     "y": {
+#         "value": shangyue,
+#         "color": get_random_color()
+#     },
     "z": {
         "value": aiqing,
         "color": get_random_color()
