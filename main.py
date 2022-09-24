@@ -90,16 +90,16 @@ def get_weather_2():
     return res21['week'], res21['sunrise'], res21['sunset'], res21['weather'], res21['pop']
 
 
-def get_weather_3():
-    url = "http://wthrcdn.etouch.cn/WeatherApi?city=" + city
-    res3 = requests.get(url)
-    res31 = xmltodict.parse(res3.text)['resp']
-    res311 = res31['forecast']['weather']
-    res312 = res31['zhishus']['zhishu']
-    return res311[0]['day']['type'], res311[1]['day']['type'], res311[2]['day']['type'], res311[3]['day']['type'], \
-           res311[4]['day']['type'], res312[0]['value'], res312[1]['value'], res312[2]['detail'], res312[4]['detail'], \
-           res312[3]['detail'], res312[5]['detail'], res312[6]['detail'], res312[7]['detail'], res312[9]['detail'], \
-           res312[10]['detail'], res312[11]['detail']
+# def get_weather_3():
+#     url = "http://wthrcdn.etouch.cn/WeatherApi?city=" + city
+#     res3 = requests.get(url)
+#     res31 = xmltodict.parse(res3.text)['resp']
+#     res311 = res31['forecast']['weather']
+#     res312 = res31['zhishus']['zhishu']
+#     return res311[0]['day']['type'], res311[1]['day']['type'], res311[2]['day']['type'], res311[3]['day']['type'], \
+#            res311[4]['day']['type'], res312[0]['value'], res312[1]['value'], res312[2]['detail'], res312[4]['detail'], \
+#            res312[3]['detail'], res312[5]['detail'], res312[6]['detail'], res312[7]['detail'], res312[9]['detail'], \
+#            res312[10]['detail'], res312[11]['detail']
 
 
 # 星座
@@ -292,7 +292,7 @@ except WeChatClientException as e:
 wm = WeChatMessage(client)
 alarm1, aqi, win, win_speed, tem, tem1, tem2 = get_weather_1()
 week, sunrise, sunset, weather, pop = get_weather_2()
-Day_1, Day_2, Day_3, Day_4, Day_5, dressing, Ultraviolet, Skincare, cold, xiche, liangshai, huwai, wuran, zhongshu, shushi, shangyue = get_weather_3()
+# Day_1, Day_2, Day_3, Day_4, Day_5, dressing, Ultraviolet, Skincare, cold, xiche, liangshai, huwai, wuran, zhongshu, shushi, shangyue = get_weather_3()
 lubarmonth, lunarday, jieqi, lunar_festival, festival = get_lunar_calendar()
 lucky, finances, shuzi, aiqing, gongzuo, jiankang, guiren, gaishu = get_xingzuo()
 sure_new_loc, sure_new_hid, present, danger1, danger2 = get_Covid_19()
