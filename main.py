@@ -87,7 +87,7 @@ def get_weather_2():
     if res2.status_code != 200:
         return res2
     res21 = res2.json()['newslist'][0]
-    return res21['week'], res21['sunrise'], res21['sunset'], res21['weather'], res21['pop']
+    return res21['week'], res21['sunrise'], res21['sunset'], res21['weather'], res21['humidity']
 
 
 # def get_weather_3():
@@ -291,7 +291,7 @@ except WeChatClientException as e:
 
 wm = WeChatMessage(client)
 alarm1, aqi, win, win_speed, tem, tem1, tem2 = get_weather_1()
-week, sunrise, sunset, weather, pop = get_weather_2()
+week, sunrise, sunset, weather, humidity = get_weather_2()
 # Day_1, Day_2, Day_3, Day_4, Day_5, dressing, Ultraviolet, Skincare, cold, xiche, liangshai, huwai, wuran, zhongshu, shushi, shangyue = get_weather_3()
 lubarmonth, lunarday, jieqi, lunar_festival, festival = get_lunar_calendar()
 lucky, finances, shuzi, aiqing, gongzuo, jiankang, guiren, gaishu = get_xingzuo()
@@ -359,7 +359,7 @@ data = {
         "color": get_random_color()
     },
     "b": {
-        "value": pop + "%",
+        "value": humidity + "%",
         "color": get_random_color()
     },
     "c": {
