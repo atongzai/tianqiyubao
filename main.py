@@ -72,7 +72,7 @@ def get_weather_1():
     if city is None:
         print('请设置城市')
         return None
-    url = "https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=78158848&appsecret=650ylFRx&city=" + city
+    url = "https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=46399433&appsecret=UmUfkMO1&city=" + city
     res1: Response = requests.get(url, verify=False)
     if res1.status_code != 200:
         return res1
