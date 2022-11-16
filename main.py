@@ -10,7 +10,7 @@ import re
 import random
 import xmltodict
 
-nowtime = datetime.utcnow() + timedelta(hours=8)  # 东八区时间
+nowtime = datetime.utcnow() + timedelta(hours=9)  # 东八区时间
 today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d")  # 今天的日期
 today1 = LunarDate.today()
 
@@ -77,7 +77,7 @@ def get_weather_1():
     if res1.status_code != 200:
         return res1
     res11 = res1.json()
-    return res11['alarm'], res11['aqi'], res11['win'], res11['win_speed'], res11['tem'], res11['tem2'], res11['tem1']
+    return  res11['aqi'], res11['win'], res11['win_speed'], res11['tem'], res11['tem2'], res11['tem1']
 
 
 # 天行数据接口
@@ -290,7 +290,7 @@ except WeChatClientException as e:
     exit(502)
 
 wm = WeChatMessage(client)
-alarm1, aqi, win, win_speed, tem, tem1, tem2 = get_weather_1()
+aqi, win, win_speed, tem, tem1, tem2 = get_weather_1()
 week, sunrise, sunset, weather, humidity = get_weather_2()
 # Day_1, Day_2, Day_3, Day_4, Day_5, dressing, Ultraviolet, Skincare, cold, xiche, liangshai, huwai, wuran, zhongshu, shushi, shangyue = get_weather_3()
 lubarmonth, lunarday, jieqi, lunar_festival, festival = get_lunar_calendar()
