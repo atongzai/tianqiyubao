@@ -10,7 +10,7 @@ import re
 import random
 import xmltodict
 
-nowtime = datetime.utcnow() + timedelta(hours=9)  # 东八区时间
+nowtime = datetime.utcnow() + timedelta(hours=7)  # 东八区时间
 today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d")  # 今天的日期
 today1 = LunarDate.today()
 
